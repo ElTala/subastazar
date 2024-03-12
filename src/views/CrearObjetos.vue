@@ -72,7 +72,7 @@
   };
 
   try {
-    const response = await fetch('http://localhost:3000/guardarObjeto', {
+    const response = await fetch('http://127.0.0.1:3000/guardarObjeto', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -87,6 +87,7 @@
     console.error('Error al realizar la solicitud:', error);
   }
 }
+
 
   function reset () {
     form.value.reset()
